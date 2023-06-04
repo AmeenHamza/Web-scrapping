@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question no 4</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .img1{
+            transform: translate(-8vw);
+            animation: slide1 1s timing-function 2s 3 forwards fill-mode;
+        }
+        .img2{
+            transform: translate(0vw);
+            animation: slide2 1s timing-function 2s 3 forwards fill-mode;
+        }
+        .img3{
+            transform: translate(8vw);
+            /* animation: slide3 2s timing-function delay 3 forwards fill-mode; */
+        }
+        .slider{
+            height: 90vh;
+            background-color: white;
+            display: flex;
+            margin: auto;
+            /* justify-content: center; */
+            align-items: center;
+        
+        }
+        @keyframes slide1 {
+            0%{
+                transform: translate(-8vw);
+            }
+            100%{
+                transform: translate(85vw);
+            }
+        }
+        @keyframes slide2 {
+            0%{
+                transform: translate(0vw);
+            }
+            100%{
+                transform: translate(92vw);
+            }
+        }
+        @keyframes slide3 {
+            0%{
+                transform: translate(65vw);
+            }
+            100%{
+                transform: translate(120vw);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <img class="img1" src="splash1.jpg" alt="" height="350px" width="280px">
+        <img class="img2" src="splash2.jpg" alt="" height="350px" width="280px">
+        <img class="img3" src="splash3.avif" alt="" height="350px" width="280px">
+    </div>
+</body>
+</html>

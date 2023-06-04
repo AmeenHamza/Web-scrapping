@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: 34px 78px;
+            height: 100vh;
+        }
+        .item{
+            background-color: lightblue;
+            border: 2px solid yellow;
+        }
+        .header{
+            background-color: black;
+            color: white;
+            padding: 15px;
+        }
+       li{
+        display: inline;
+        padding: 19px;
+       }
+       .footer{
+        background-color: mediumaquamarine;
+        color: yellow;
+        text-align: center;
+        padding: 12px;
+       }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul class="ul">
+                <li>Home</li>
+                <li>ABout</li>
+                <li>COntact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    <footer class="footer">
+        &copy; Copyright Moazzam.co AllRightsReserved
+    </footer>
+</body>
+</html>

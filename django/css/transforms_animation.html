@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 90vh;
+            background-color: lightblue;
+        }
+        /* -- hover is such a very beautiful feature for do something when someone move cursor on your object */
+        img{
+            width: 445px;
+            height: 256px;
+            /* transition-property: width;
+            transition-duration: -2.5s;
+            transition-timing-function: ease-in; */
+            /* transition-delay: .25s; Kitne der baad chalana h */
+            /* -- Shortcut of transition property -- */
+            transition: width 1s ease-in-out 1s,height 1s ease-in-out; /* you can set multiple properties using , seperated values*/
+
+        }
+        img:hover{
+            width: 100vw;
+            border: 2px solid white;
+            height: 798px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Transform is used to disign mathematical things like draw a triangle rotatable picture etc. -->
+    <div class="container">
+        <img src="splash.avif" alt="">
+    </div>
+</body>
+</html>

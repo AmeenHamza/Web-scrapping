@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid jesi cheezain</title>
+<style>
+    /* <!-- ** Some times we need a disign in tabular form for this purpose grid is use ** --> */
+    .container{
+        display: grid;
+        background-color: lightblue;
+        /* grid-row-gap: 9px;
+        grid-column-gap: 9px; */
+        grid-gap: 12px 21px;
+        grid-template-columns: auto auto auto;
+        /* justify-content: ; */
+        /* align-self:flex-start ;  also be use in grid */
+        /* ham yahan se width or heigth bhi set karsakte h */
+        /* iska matlab ye h k jitni dafa ham grid template colums mein auto likhainge utne columns ek row mein create honge */
+        
+    }
+    /* 5:16 */
+    .item{
+        background-color: lightgreen;
+        border: 2px solid red;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+</body>
+</html>

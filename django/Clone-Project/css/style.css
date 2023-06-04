@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Playfair+Display:ital@1&family=Raleway:ital,wght@1,100&family=Ubuntu&display=swap');
+:root{
+    --main-bg-color:rgb(59, 59, 236);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Baskerville', serif;
+}
+.head{
+    background-color: var(--main-bg-color);    
+}
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 230px;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+}
+nav ul{
+    height: 9vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

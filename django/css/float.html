@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box or bhi boht kuch</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            height: 233px;
+            width: 220px;
+            background-color: lightblue;
+            /* --- What is float */
+            /* Float is used to move element from right to left or  left to right */
+            float: right;
+            /* --- Ab baat karte h clear property ki  */
+            /* clear property ek aesi property hoti h k jo element float ki waja se mutassir hua h usko wapas original jagapar lane k lye */
+            
+        }
+        .box2{
+            /* Agar 2 element mein float right kardia to dono ek sath ajainge */
+            height: 233px;
+            width: 220px;
+            background-color: rgb(58, 86, 95);
+            float: right;
+            clear: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+</body>
+</html>

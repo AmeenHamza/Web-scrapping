@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* .red{
+    background-color: rgb(127, 151, 108);
+    height: 240px;
+    color : blue;
+}
+.green{
+    background-color: palegreen;
+    height: 120px;
+    color :white;
+} */
+.container{
+    /* background-color: rgb(153, 180, 150); */
+    /* let us suppose mein height barhakar 1334px kardun to cover mein poora gherlega or contain mein wo jitni picture ki height or width hogi utna gherega */
+    color: white;
+    border: 2px solid red;
+    width: 334px;
+    height: 1744px;
+    background-image: url("image.jpeg");
+    background-repeat: no-repeat;
+    /* background-size: auto; cover poora gherlega or contain bs utan hi gheraga jitna usko bolainge */
+    /* background-size: 63px 45px; */
+    /* background-position: center; */
+    background-attachment: fixed;
+}
+/* Background image jab lagate h to wo repeat hoti h x mein bhi y mein bhi  usko ham y repeat x repeat or no repeat bhi karsakte h
+space or space repeat bhi h round also*/ 
+body{
+   
+}

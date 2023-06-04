@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 245px;
+            width: 244px;
+            background: rgb(79, 128, 145);
+            font-size: larger;
+            text-align: center;
+            /* margin-top: 12%;  Ye space dedega upper neeche se jahan se bolenge */
+            /* margin-left: 22%; */
+            /* margin-bottom: 12%; */
+            /* padding: 12%; Padding us cheez to lamba kardega This is my knowledge */
+            /* margin : 14px; */
+            /*  ----------- Mean ye k padding andar se space ka kaam karta h jabke margin bahar k space ko control karte h---------- */
+            padding: 13px; 
+            /* Margin shorcut */
+            /* margin: 89px 19px 18px 17px; */
+            /* ------- Agar ham khali do values dedain to wo automatically pehli wali ko top or bottom ---------- or dusri wali ko right or left lelega */
+            margin: 12px 23px;
+
+            /* ----- NOw setting a borders --------------- */
+            border-width: 3px;
+            /* Border style mein boht sare options ate h */
+            border-style: inset; /* ye wala tite h */
+            /* ************ Border shortend ************* */
+            border: 12px solid rgb(197, 171, 171);
+            border-radius: 23px; /* Ye border ko goll karta h */
+
+            /* ----------- Margub Collapse --------------- */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque error officia soluta illum provident possimus. Necessitatibus, libero. Debitis beatae reiciendis voluptates omnis, modi, accusantium iusto expedita aperiam, ipsum alias maiores molestiae id ratione mollitia?
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

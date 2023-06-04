@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        /* -----static-----
+        default value position ki static hoti h agar aapko position set karni h to position ko relative karna parega warna aap khud zimmidar honge */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+/* --------relative-----------
+relative position karke aap uski position set karsakte ho see below how */
+        header {
+            height: 2vh;
+            background-color: black;
+            color: white;
+            padding: 30px;
+
+        }
+/* ------ absolute-----
+absolute thora samajh nh ay by the way absolute se wo cheez document k flow se bahar nikal jati h */
+        li {
+            display: inline;
+            padding: 12px 42px;
+            font-size: large;
+        }
+/* ---- fixed------
+agar hamara page scrollable h to agar ham kisi cheez ki positioin ko fixed kardenge to wo scroll mein bhi sath chalegi */
+        .content {
+            background-color: lightblue;
+            height: 50vh;
+            width: 50vw;
+            margin: auto;
+            border: 3px white inset;
+        }
+/* --------sticky----------
+scroll karte hue header bhi sath chalega */
+        .box {
+            height: 84px;
+            width: 196px;
+            background-color: yellow;
+            position: relative;
+            left: 75px;
+            padding-top: 33px;
+            padding-left: 11px;
+            margin-top: 12px;
+        }
+/* ------ z-index---------- */
+/* agar do cheezain aapas mein collapse karrahi h to kisko upper dikhana h wo zindex se hoga agar jiski z index ki value zyada hogi wo upper dikhega */
+        .box2 {
+            height: 84px;
+            width: 196px;
+            background-color: rgb(68, 211, 211);
+            position: relative;
+            left: 330px;
+            padding-top: 33px;
+            padding-left: 11px;
+            bottom: 117px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Courses</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quas perferendis velit, voluptatem
+            corrupti veniam unde optio inventore labore obcaecati placeat officia dignissimos.
+            <div class="box">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, nesciunt.
+            </div>
+            <div class="box2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus?
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

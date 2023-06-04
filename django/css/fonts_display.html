@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts and Display</title>
+    <style>
+        /* ------- Agar do cheezon ki display ko inlne karden to wo side by side ajainge */
+        .box1{
+            background-color: lightblue;
+            width: 423px;
+            height: 145px;
+            /* margin: 34px; */
+            /* --- Display inline se hoga ye k jo div poori width gherleta h wo itni hi jaga lega jitni usko chaihiye hogi ---- In display inline width or heigth doesnot work*/
+            /* display: inline;  */
+            
+            /* ------- But here is a thing inline-block which allows user to set width heigth margin padding */
+            display: inline-block;
+
+
+            /* --------- Another property is - none- cheez hi gayab hojaegi - visibility :none - mein wo cheez nazar nhi aaegi magar jaga gherige*/
+        }
+        .box2{
+            background-color: lightpink;
+            width: 423px;
+            height: 145px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa.
+    </div>
+</body>
+</html>
